@@ -7,6 +7,10 @@
     padding: 15px;
 }
 
+#canvas-compare {
+  border: 1px solid black;
+}
+
 .row::after {
     content: "";
     clear: both;

@@ -17,10 +17,13 @@ request
   });
 */
 
+var ctx = document.getElementById('compare-canvas').getContext('2d');
+
 function getAjaxRequest(){
   console.log('begin getAjaxRequest');
   var vKey = '98c792ff74119a20565d7a84335db06fb6e0f679';
-  var vGet = 'PCT012A015,PCT012A119'; 
+  //var vGet = 'PCT012A015,PCT012A119'; 
+  var vGet = 'P0010001';
   var vFor = 'state:01, 02';
   var apiUrl = 'http://api.census.gov/data/2010/sf1'
 
@@ -42,7 +45,15 @@ function getAjaxRequest(){
   console.log('end getAjaxRequest');
 }
 
+function colorSquare(){
+  ctx.fillStyle = 'Red';
+  ctx.fillRect(10, 10, 100 , 100);
+}  
+
 $(function(){
  	console.log('ready');
     console.log(getAjaxRequest());
+    colorSquare();
+    
+
 });
