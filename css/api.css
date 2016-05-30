@@ -2,13 +2,33 @@
     box-sizing: border-box;
 }
 
+
+body{
+    background-color : #609986;
+}
+
+h1, h2 {
+    color:  #f5d452;
+}
+
 .page-header {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     padding: 15px;
 }
 
+/*
 #canvas-compare {
   border: 1px solid black;
+}
+*/
+
+#btn1{
+    height: 1,1em;
+    width: 10em;
+    font-size: 1.5em;
+    text-align: center;
+    color: #f5d452;
+    background-color:  #31455d; /*#4281a4;*/
 }
 
 .row::after {
@@ -33,5 +53,5 @@
 [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
