@@ -37,7 +37,7 @@ function getStateData(state1, state2){
   var vKey = '98c792ff74119a20565d7a84335db06fb6e0f679';
   var vGet = 'P0010001';
   var vFor = 'state:' + state1 + ',' + state2;
-  var apiUrl = 'http://api.census.gov/data/2010/sf1'
+  var apiUrl = 'https://api.census.gov/data/2010/sf1'
 
   $.ajax({
     url: apiUrl,
